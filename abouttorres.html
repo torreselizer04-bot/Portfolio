@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Torres</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #1a202c;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1a202c;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #1a202c;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+    }
+
+    .info {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+
+    .skills {
+      margin-top: 1.5rem;
+      text-align: left;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #edf2f7;
+      margin: 0.5rem 0;
+      padding: 0.7rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>About Me</h2>
+  </header>
+
+  <div class="container">
+    <img src="{{ url_for('static', filename='images/elizer.jpg') }}" alt="Profile">
+
+    <h1>Rudy Elizer Torres</h1>
+    <p class="info"><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Web Development (HTML, CSS, Flask)</li>
+        <li>Python Programming</li>
+        <li>Database Management</li>
+        <li>Problem Solving & Critical Thinking</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
